@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hướng Dẫn Sử Dụng</title>
+<title>Hướng Dẫn Sử Dụng Leaf Detection</title>
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -18,17 +18,19 @@
         border-radius: 5px;
         background-color: #f9f9f9;
     }
-    h1 {
-        color: #333;
-    }
-    h2 {
-        color: #555;
+    h1, h2 {
+        color: #2c3e50;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
     }
     code {
-        background-color: #eee;
+        background-color: #e7e7e7;
         padding: 2px 5px;
         border-radius: 3px;
         font-family: monospace;
+    }
+    ul {
+        margin-top: 5px;
     }
 </style>
 </head>
@@ -46,7 +48,7 @@
     <ul>
         <li>Cửa sổ đầu tiên hiện lên, chọn hình ảnh chứa vật tham chiếu (Ở đây là file <code>A415-5.jpg</code>)</li>
         <li>Cửa sổ thứ hai hiện lên, chọn hình ảnh chứa lá cây cần nhận diện (Ở đây là file <code>Copb15-5.jpg</code>), kết quả sẽ được lưu ở thư mục <code>leaf</code></li>
-        <li>Cửa sổ thứ ba hiện lên, chọn tất cả hình ảnh đã được nhận diện và cắt từng bounding box (Ở đây hình ảnh sẽ được lưu ở thư mục <code>leaf/Copb15-5/crops/leaf</code>)</li>
+        <li>Cửa sổ thứ ba hiện lên, chọn tất cả hình ảnh đã được nhận diện và cắt từng bounding box (Hình ảnh sẽ được lưu ở <code>leaf/Copb15-5/crops/leaf</code>)</li>
     </ul>
 
     <h2>Bước 3:</h2>
