@@ -4,7 +4,7 @@ import tkinter as tk
 from tkinter import filedialog
 from matplotlib import pyplot as plt
 
-def load_scale_factor(file_path='scale_factor.txt'):
+def load_scale_factor(file_path='AreaContour/scale_factor.txt'):
     try:
         with open(file_path, 'r') as file:
             scale_factor = float(file.read())
