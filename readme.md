@@ -22,5 +22,12 @@
     <h2>Bước 3:</h2>
     <p>Sau khi đã làm những điều trên, kết quả tính diện tích lá cây sẽ được hiện ra.</p>
 </div>
+<div class="container">
+<h1>Hướng Dẫn Tạo Data</h1>
+<h2>Bước 1:</h2>
+<p>Chạy file augmented_method.py trong thư mục DataAugment</p>
+    <h2>Bước 2:</h2>
+    <p>Chọn ảnh muốn tạo data, sau đó ảnh mới sẽ được thêm vào thư mục ImageDataGenerator</p>
+</div>
 </body>
 </html>

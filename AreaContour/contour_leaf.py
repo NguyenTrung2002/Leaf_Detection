@@ -16,18 +16,15 @@ def load_scale_factor(file_path='AreaContour/scale_factor.txt'):
 
 def apply_green_color_filter(image):
     # Apply Gaussian blur to smooth the image, reducing noise and improving edge detection
-    blurred_image = cv2.GaussianBlur(image, (5, 5), 0)
+    blurred_image = cv2.GaussianBlur(image, (11, 11), 0)
     
     # Convert to HSV color space after blurring
     hsv = cv2.cvtColor(blurred_image, cv2.COLOR_BGR2HSV)
-    lower_green = np.array([30, 40, 40])
-    upper_green = np.array([80, 255, 255])
+    lower_green = np.array([30, 50, 40])
+    upper_green = np.array([90, 255, 255])
     mask = cv2.inRange(hsv, lower_green, upper_green)
-
     # Use morphological operations to clean up the mask
-    kernel = np.ones((5, 5), np.uint8)
-    mask = cv2.morphologyEx(mask, cv2.MORPH_CLOSE, kernel)
-    mask = cv2.morphologyEx(mask, cv2.MORPH_OPEN, kernel)
+    
     return mask
 
 def find_largest_contour(contours):
